@@ -20,13 +20,13 @@
 
 * 1.2.1 当我们打开比较现代的浏览器，新建一个box,如下图所示：
 
-![content-box](vx_images/576933611239571.png =600x)
+![content-box](vx_images/576933611239571.png)
 
 当使用**content-box**时，我们设置box的宽高，其实设置的是**content**的宽高。padding、border、margin并没有受到影响。因此当你单独设置了padding或者border时，实际的box大小是要比你设置的width/height大的。这里我们看到box的实际宽度是 content + padding * 2 + border * 2。
 
 * 1.2.2 当我们打开一个陈旧的令人抓狂的浏览器或者使用border-box时，新建一个box，如下图所示：
 
-![border-box](vx_images/417394811236126.png =600x)
+![border-box](vx_images/417394811236126.png)
 
 当使用**border-box**时，我们设置box的宽高，其实设置的时**content+padding * 2+border * 2**的宽高。因此当你单独设置了padding或者border时，实际的content大小是要比你设置的width/height小的， 但是box大小是不变的。这里我们看到content的实际宽度是 width - padding * 2 - border * 2。
 
